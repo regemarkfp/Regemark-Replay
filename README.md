@@ -12,6 +12,18 @@ Run the installer: it installs for your Windows user (no administrator rights ne
 
 > Windows may say *"Windows protected your PC"* because the installer is not code-signed yet: click **More info › Run anyway**.
 
+### Linux (Linux Mint 22 / Ubuntu 24.04, 64-bit) — preview
+
+Download `regemark-replay_<version>_amd64.deb` and install it from a terminal:
+
+```
+sudo apt install ./regemark-replay_1.1.0_amd64.deb
+```
+
+(Double-clicking the .deb in Linux Mint also works.) It appears in the menu under *Sound & Video*. Right-click it there for **Install NDI** (downloads the free NDI runtime and asks you to accept its licence) and **Open in web browser**.
+
+On Linux: NDI in / out, USB and HDMI capture cards (V4L2), sound devices through PulseAudio / PipeWire (instead of ASIO), X-keys and MIDI all work. DeckLink cards need Blackmagic Desktop Video *and* an ffmpeg built with DeckLink support (Ubuntu's ffmpeg doesn't include it). Keyboard shortcuts work while a Regemark Replay window has focus; system-wide hotkeys are Windows-only.
+
 ## What it does
 
 - **Up to 8 cameras** in from **NDI** or **DeckLink / capture cards**, recorded as ISOs (SpeedHQ 4:2:2, every frame a keyframe — light on the CPU, instant scrubbing), crash-safe files with timecode in the file name.
@@ -28,11 +40,11 @@ Run the installer: it installs for your Windows user (no administrator rights ne
 
 ## Requirements
 
-- Windows 10 or 11 (64-bit), a recent multi-core CPU, 16 GB RAM or more recommended.
+- Windows 10 or 11 (64-bit), or Linux Mint 22 / Ubuntu 24.04 (64-bit). A recent multi-core CPU, 16 GB RAM or more recommended.
 - A fast SSD / NVMe for recordings: about **55 GB per camera per hour** at Standard quality (27 GB Light, 90 GB High).
-- **NDI Runtime** or NDI Tools ([ndi.video](https://ndi.video/tools/)) for NDI inputs and outputs.
+- **NDI Runtime** or NDI Tools ([ndi.video](https://ndi.video/tools/)) for NDI inputs and outputs (on Linux: *Install NDI* from the menu entry).
 - **Blackmagic Desktop Video** for DeckLink cards.
-- Internet on first start: the app downloads **ffmpeg** once (~100 MB).
+- Windows: internet on first start — the app downloads **ffmpeg** once (~100 MB). Linux: ffmpeg is installed with the package.
 
 ## Getting started
 
@@ -46,7 +58,7 @@ All shortcuts are listed and editable in **SETTINGS › Controls** (export / imp
 
 ## Support & feedback
 
-Found a bug or want a feature? Open an [issue](../../issues). Please include the version (shown in the title bar) and the log file `regereplay.log` from the install folder (`%LOCALAPPDATA%\Programs\Regemark Replay`).
+Found a bug or want a feature? Open an [issue](../../issues). Please include the version (shown in the title bar) and the log file `regereplay.log` from the install folder (`%LOCALAPPDATA%\Programs\Regemark Replay`; on Linux `~/.config/RegemarkReplay`).
 
 ## Credits
 

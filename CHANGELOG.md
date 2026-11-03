@@ -14,6 +14,9 @@
 - Browse buttons for folders, shortcuts and projects; INGEST FOLDER.
 - New look: dark grey (#262626) with RegemarkFP green (#00ff82), hard corners and slanted film-style buttons like the RegemarkFP logo.
 
+**Linux (preview)**
+- `.deb` package for Linux Mint 22 / Ubuntu 24.04: NDI, USB / HDMI capture cards, DeckLink (with a DeckLink-enabled ffmpeg), PulseAudio / PipeWire sound devices, X-keys and MIDI, app windows on every display, Install NDI helper.
+
 **Improved**
 - DeckLink inputs ask the card for the house video format (fall back to its default).
 - Multiview / outputs view: clip names wrap instead of overlapping, larger countdown, shorter EVS-style meters.
