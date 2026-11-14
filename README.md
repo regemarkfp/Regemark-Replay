@@ -1,3 +1,5 @@
+<img src="docs/icon.png" alt="Regemark Replay icon" width="96" align="right">
+
 # Regemark Replay
 
 **Live replay, ISO recording and VT playout for Windows** — an EVS / 3Play-style replay system for live sport, church and event productions. Made by RegemarkFP (Regemark Films + Photography, Bloemfontein, South Africa).

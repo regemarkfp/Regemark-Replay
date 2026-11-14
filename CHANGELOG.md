@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.4 — 2026-11-14
+
+**New**
+- New app icon: a replay loop around a play button (replay + VT), in the RegemarkFP app-icon frame. Used for the program, installer, taskbar, Start menu, Linux menu and the browser tab.
+
 ## 1.2.3 — 2026-11-14
 
 **New**
