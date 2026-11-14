@@ -28,11 +28,12 @@ On Linux: NDI in / out, USB and HDMI capture cards (V4L2), sound devices through
 
 - **Up to 8 cameras** in from **NDI** or **DeckLink / capture cards**, recorded as ISOs (SpeedHQ 4:2:2, every frame a keyframe — light on the CPU, instant scrubbing), crash-safe files with timecode in the file name.
 - **Replay like an EVS:** jog / shuttle back from LIVE straight into the recording (the last seconds are kept in memory for instant response), mark IN / OUT, play at any speed from -1000% to 1000%, smooth slow motion, FAST JOG.
-- **Up to 8 replay outputs** (NDI, plus HyperDeck control for ATEM / Companion), gang control, holding slates, audio routing per output (up to 16 channels, ASIO / Dante).
+- **Up to 8 replay outputs** to NDI, DeckLink SDI / HDMI or a clean fullscreen screen output, plus HyperDeck control and ATEM auto-roll; gang control, holding slates, audio routing per output (up to 16 channels, ASIO / Dante).
+- **Tally** on every camera and output (NDI and ATEM), and the multiview / outputs view as NDI, DeckLink or screen feeds.
 - **Clips, media and playlists:** clip list with angle thumbnails, per-clip camera, IN / OUT trimming on any clip, duplicate, ingest of video files (watch folder too), playlists with Mix / Dip / Wipe transitions and playlist countdown.
 - **Clip stores** (4 pages × 10) with two-state button feedback.
 - **Multiview and outputs view** for a second screen, with timecode, countdowns and audio meters.
-- **Controllers:** keyboard shortcuts, X-keys (incl. XK-68 Jog & Shuttle) with button lights, MIDI with feedback, macros, Companion / Stream Deck over HTTP.
+- **Controllers:** keyboard shortcuts, X-keys (incl. XK-68 Jog & Shuttle) with button lights, MIDI with feedback, macros, and a [Bitfocus Companion module](https://github.com/regemarkfp/companion-module-regemark-replay) for Stream Deck.
 - **ATEM → DaVinci Resolve:** logs the ATEM's program cuts while recording and exports a Resolve timeline (FCP7 XML) and a multicam clip (FCPXML) of the ISOs.
 - **Projects:** save / load the whole show set-up.
 
